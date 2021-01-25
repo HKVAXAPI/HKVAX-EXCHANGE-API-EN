@@ -46,20 +46,11 @@ To enhance market liquidity and participation, HKVAX adopts a maker-taker fee sc
 
 HKVAX's database and servers are based in Hong Kong.
 
-## Access URLs
+## Simulated Environment
 
-https://api.trade.hkvax.com/v1
-
-## Mock Environment
-
-The mock environment can be used to test API connectivity and trading. The function of the mock environment is independent of the formal environment. You need to register, log in, and create an API key separately.
+The simulated environment can be used to test API connectivity and trading. The function of the simulated environment is independent of the formal environment. You need to register, log in, and create an API key separately.
 
 In addition, once you complete the registration, we will provide sufficient simulated funds for you to test.
 
-### Mock Environment URLs
-
-When testing API connectivity, make sure to use the following URL:
-
 **website**: [https://simtrade.hkvax.com](https://simtrade.hkvax.com/)
 
-**REST API**: [https://api.simtrade.hkvax.com/v1 ](https://api.simtrade.hkvax.com/v1 )
