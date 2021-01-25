@@ -256,7 +256,6 @@ It is recommended that you convert the number to a string when making a request 
 | BCHABC/USD | 4 | 2 | 2 |
 | LTC/USD    | 4 | 2 | 2 |
 | XRP/USD    | 4 | 6 | 6 |
-| USDT/USD | 4 | 4 | 2 |
 
 ## Response parameter error code
 
