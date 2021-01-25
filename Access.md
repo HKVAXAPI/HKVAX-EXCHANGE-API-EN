@@ -11,7 +11,9 @@ Each user can create 10 groups of API Keys, and each API Key can set three permi
 
 ## Access URLs
 
-[https://api.trade.hkvax.com/v1](https://api.trade.hkvax.com/v1)
+Trade: [https://api.trade.hkvax.com/v1](https://api.trade.hkvax.com/v1)
+
+Sim-trade: [https://api.simtrade.hkvax.com/v1 ](https://api.simtrade.hkvax.com/v1 )
 
 ## Request Format
 
@@ -193,7 +195,6 @@ It is recommended that you convert the number to a string when making a request 
 | BCHABC/USD | 4                        | 2                     | 2                      |
 | LTC/USD    | 4                        | 2                     | 2                      |
 | XRP/USD    | 4                        | 6                     | 6                      |
-| USDT/USD   | 4                        | 4                     | 2                      |
 
 ## Response parameter error code
 
