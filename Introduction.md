@@ -46,6 +46,10 @@ To enhance market liquidity and participation, HKVAX adopts a maker-taker fee sc
 
 HKVAX's database and servers are based in Hong Kong.
 
+## Access URLs
+
+https://api.trade.hkvax.com/v1
+
 ## Mock Environment
 
 The mock environment can be used to test API connectivity and trading. The function of the mock environment is independent of the formal environment. You need to register, log in, and create an API key separately.
