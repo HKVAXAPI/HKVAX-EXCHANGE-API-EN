@@ -261,34 +261,34 @@ It is recommended that you convert the number to a string when making a request 
 ## Response parameter error code
 
 | Error code | Meaning | Description |
-| ------ | ------------------- | -------------------------------------- |
+| ------ | ------------------- | ---------------------- -------------------- |
 | 100006 | Bad request | Invalid request format: invalid request parameter or header parameter |
 | 100037 | Orders not from users | The order number the user is requesting to cancel is not his own order number |
-| 100038 | Order does not exist | 
-| 100039 | Order has been cancelled | 
-| 100040 | Order has been completed | 
-| 100041 | Order cancellation failed | 
+| 100038 | Order does not exist | |
+| 100039 | Order has been cancelled | |
+| 100040 | Order has been completed | |
+| 100041 | Order cancellation failed | |
 | 100043 | Unsupported trading pair | The trading pair is offline or the trading pair does not exist |
 | 100044 | Order action is not supported | An action other than buying and selling is passed |
 | 100046 | Trading pair is not allowed to place orders | This trading pair is not allowed to place orders |
-| 100047 | Trading prohibited | User group permission restrictions |
-| 100048 | Invalid order price or quantity | Excessive order quantity or price |
+| 100047 | Trading prohibited | User group permission restrictions                           |
+| 100048 | Invalid order price or quantity | Excessive order quantity or price                            |
 | 100049 | Invalid order price or quantity | Order quantity or price is less than the minimum value |
 | 100050 | Invalid order price or quantity | Order quantity or price is greater than the maximum value |
-| 100051 | Price exceeds limit | 
-| 100052 | Order type is not supported | An unknown order type was provided |
-| 100054 | Insufficient balance |                                                              
-| 100055 | Order placing failed | 
-| 100112 | The account does not exist | Funds account not created  |
-| 100212 | Security authentication failed | Failure of a safety check for a parameter or result |
-| 100152 | Frequent orders | Exceeding order flow limits |
-| 500100 | Signature error | 
-| 500202 | ApiKey has no access permission | 
+| 100051 | Price exceeds limit | |
+| 100052 | Order type is not supported | An unknown order type was provided                           |
+| 100054 | Insufficient balance |                                                              |
+| 100055 | Order placing failed | |
+| 100112 | The account does not exist | Funds account not created                                    |
+| 100212 | Security authentication failed | Failure of a safety check for a parameter or result          |
+| 100152 | Frequent orders | Exceeding order flow limits                                  |
+| 500100 | Signature error | |
+| 500202 | ApiKey has no access permission | |
 
 ## Interface Groups
 
 | Interface grouping | Containing interface |
-| ------------------ | -------------------- |
+| ------------ | ------------------------------------ ------------------------ |
 | Quotation | 24hr Ticker  (POST /quotation/quotation/query/symbolQuotationGroupBy)<br />Market Depth (POST /quotation/quotation/query/depthData) <br />Candles (POST /quotation/kline/get/quotationHistory)<br />The Latest Trade (POST /quotation/quotation/query/latestTradeQuotation)<br />Order Book (POST /quotation/order/query/orderBook)<br />Latest Trades (POST /quotation/order/query/dealList)<br />Best Bid& Best Ask (POST /quotation/order/query/marketBestPrice) |
 | Trade | Place an order (POST /order/cex/user/order/create)<br />Cancel an order (POST /order/cex/user/order/cancel) |
 | User Data Query | Account Balance (POST /user/cex/user/asset/query/currencyAsset)<br/>Order List (POST /user/cex/user/order/query/orderList)<br/ >Order Details (POST /user/cex/user/mm/query/orderDetail)<br/>Trades (POST /user/cex/user/order/query/dealOrderList)<br/>Order Trades (POST /user/cex/user/order/query/dealDetail) |
