@@ -261,7 +261,7 @@ It is recommended that you convert the number to a string when making a request 
 ## Response parameter error code
 
 | Error code | Meaning | Description |
-| ------ | ------------------- | ---------------------- -------------------- |
+| ------ | ------------------- | ---------------------------------------- |
 | 100006 | Bad request | Invalid request format: invalid request parameter or header parameter |
 | 100037 | Orders not from users | The order number the user is requesting to cancel is not his own order number |
 | 100038 | Order does not exist | |
@@ -288,7 +288,7 @@ It is recommended that you convert the number to a string when making a request 
 ## Interface Groups
 
 | Interface grouping | Containing interface |
-| ------------ | ------------------------------------ ------------------------ |
+| ------------ | --------------------------------------------------------- |
 | Quotation | 24hr Ticker  (POST /quotation/quotation/query/symbolQuotationGroupBy)<br />Market Depth (POST /quotation/quotation/query/depthData) <br />Candles (POST /quotation/kline/get/quotationHistory)<br />The Latest Trade (POST /quotation/quotation/query/latestTradeQuotation)<br />Order Book (POST /quotation/order/query/orderBook)<br />Latest Trades (POST /quotation/order/query/dealList)<br />Best Bid& Best Ask (POST /quotation/order/query/marketBestPrice) |
 | Trade | Place an order (POST /order/cex/user/order/create)<br />Cancel an order (POST /order/cex/user/order/cancel) |
 | User Data Query | Account Balance (POST /user/cex/user/asset/query/currencyAsset)<br/>Order List (POST /user/cex/user/order/query/orderList)<br/ >Order Details (POST /user/cex/user/mm/query/orderDetail)<br/>Trades (POST /user/cex/user/order/query/dealOrderList)<br/>Order Trades (POST /user/cex/user/order/query/dealDetail) |
