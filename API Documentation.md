@@ -42,10 +42,6 @@ Self-trading is not allowed on HKVAX. Two orders from the same user will not fil
 
 To enhance market liquidity and participation, HKVAX adopts a maker-taker fee schedule, in which the maker fee is lower than the taker fee. Maker: 0.2%, Maker: 0.1%
 
-## Server
-
-HKVAX's database and servers are based in Hong Kong.
-
 ## Sim-trade
 
 Sim-trade can be used to test API connectivity and trading. The function of the simulated environment is independent of the formal environment. You need to register, log in, and create an API key separately.
