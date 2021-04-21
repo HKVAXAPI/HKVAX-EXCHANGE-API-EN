@@ -32,9 +32,9 @@ A legitimate request consists of a header part and a requestbody part.
 | SIGNATURE      | string | true     | **Request data signature string**                            |
 | CEXTOKEN       | string | false    | Required to get the apikey interface, and the token needs to be logged in to get |
 | DEVICEID       | string | true     | Random string (can be fixed to a value)                      |
-| DEVICESOURCE   | string | true     | fixed value: web                                             |
+| DEVICESOURCE   | string | true     | Fixed value: web                                             |
 | Lang           | string | true     | zh-CN or en-US                                               |
-| Client         | string | true     | Fixed value, assigned by cex                                 |
+| Client         | string | true     | Fixed value, client customize name or id                     |
 
 **Requestbody**
 
