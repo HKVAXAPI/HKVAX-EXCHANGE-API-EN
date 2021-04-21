@@ -88,7 +88,7 @@ A legitimate request consists of a header part and a requestbody part.
 | DEVICEID     | string | true     | Random string (can be fixed to a value)                 |
 | DEVICESOURCE | string | true     | fixed value: web                            |
 | Lang         | string | true     | zh-CN or en-US                           |
-| Client       | string | true     | Fixed value, assigned by cex                     |
+| Client       | string | true     | Fixed value, client customize name or id                     |
 
 **Requestbody**
 
