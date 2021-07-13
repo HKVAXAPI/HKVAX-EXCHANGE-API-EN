@@ -280,7 +280,7 @@ It is recommended that you convert the number to a string when making a request 
 
 | Interface grouping | Containing interface |
 | ------------ | --------------------------------------------------------- |
-| Quotation | 24hr Ticker  (POST /quotation/quotation/query/symbolQuotationGroupBy)<br />Market Depth (POST /quotation/quotation/query/depthData) <br />Candles (POST /quotation/kline/get/quotationHistory)<br />The Latest Trade (POST /quotation/quotation/query/latestTradeQuotation)<br />Order Book (POST /quotation/order/query/orderBook)<br />Latest Trades (POST /quotation/order/query/dealList)<br />Best Bid& Best Ask (POST /quotation/order/query/marketBestPrice) |
+| Quotation | 24hr Ticker  (POST /quotation/quotation/quotation/query/symbolQuotationGroupBy)<br />Market Depth (POST /quotation/quotation/quotation/query/depthData) <br />Candles (POST /quotation/quotation/kline/get/quotationHistory)<br />The Latest Trade (POST /quotation/quotation/quotation/query/latestTradeQuotation)<br />Order Book (POST /quotation/quotation/order/query/orderBook)<br />Latest Trades (POST /quotation/quotation/order/query/dealList)<br />Best Bid& Best Ask (POST /quotation/quotation/order/query/marketBestPrice) |
 | Trade | Place an order (POST /order/cex/user/order/create)<br />Cancel an order (POST /order/cex/user/order/cancel) |
 | User Data Query | Account Balance (POST /user/cex/user/asset/query/currencyAsset)<br/>Order List (POST /user/cex/user/order/query/orderList)<br/ >Order Details (POST /user/cex/user/mm/query/orderDetail)<br/>Trades (POST /user/cex/user/order/query/dealOrderList)<br/>Order Trades (POST /user/cex/user/order/query/dealDetail) |
 
@@ -294,7 +294,7 @@ Get the 24hr volume and price of all trading pairs.
 
 **HTTP Request**
 
-> POST /quotation/quotation/query/symbolQuotationGroupBy
+> POST /quotation/quotation/quotation/query/symbolQuotationGroupBy
 
 **Request Parameters**
 
@@ -310,7 +310,7 @@ None
 
 **curl request example**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/query/symbolQuotationGroupBy](https://api.trade.hkvax.com/v1/quotation/quotation/query/symbolQuotationGroupBy)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\"}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/symbolQuotationGroupBy](https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/symbolQuotationGroupBy)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\"}"
 
 **Response** 
 
@@ -382,7 +382,7 @@ Get the depth data of the specified pair.
 
 **HTTP Request**
 
-> POST /quotation/quotation/query/depthData
+> POST /quotation/quotation/quotation/query/depthData
 
 **Request Parameters**
 
@@ -403,7 +403,7 @@ Get the depth data of the specified pair.
 
 **curl call example**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/query/depthData](https://api.trade.hkvax.com/v1/quotation/quotation/query/depthData)" -H "accept: \*/*" -H "SIGNATURE:   your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/depthData](https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/depthData)" -H "accept: \*/*" -H "SIGNATURE:   your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
 
 **Response Parameters**
 
@@ -459,7 +459,7 @@ Get historical candle data of a specified pair.
 
 **HTTP Request**
 
-> POST /quotation/kline/get/quotationHistory
+> POST /quotation/quotation/kline/get/quotationHistory
 
 **Request Parameters**
 
@@ -486,7 +486,7 @@ Get historical candle data of a specified pair.
 
 **curl call example**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/kline/get/quotationHistory](https://api.trade.hkvax.com/v1/quotation/kline/get/quotationHistory)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\", \\"startTime\\" : 1569405600000, \\"endTime\\" : 1569407400000, \\"range\\" : 300000}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/kline/get/quotationHistory](https://api.trade.hkvax.com/v1/quotation/quotation/kline/get/quotationHistory)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\", \\"startTime\\" : 1569405600000, \\"endTime\\" : 1569407400000, \\"range\\" : 300000}}"
 
 **Response Parameters**
 
@@ -533,7 +533,7 @@ Get the latest trade data of a specified pair.
 
 **HTTP Request**
 
-> POST /quotation/quotation/query/latestTradeQuotation
+> POST /quotation/quotation/quotation/query/latestTradeQuotation
 
 **Request Parameters**
 
@@ -554,7 +554,7 @@ Get the latest trade data of a specified pair.
 
 **curl call example**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/query/latestTradeQuotation](https://api.trade.hkvax.com/v1/quotation/quotation/query/latestTradeQuotation)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/latestTradeQuotation](https://api.trade.hkvax.com/v1/quotation/quotation/quotation/query/latestTradeQuotation)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"BTC/USD\\"}}"
 
 **Response Parameters**
 
@@ -590,7 +590,7 @@ Get the current order book data of the specified pair.
 
 **HTTP Request**
 
-> POST /quotation/order/query/orderBook
+> POST /quotation/quotation/order/query/orderBook
 
 **Request Parameters**
 
@@ -601,7 +601,7 @@ Get the current order book data of the specified pair.
 
 **curl call example**
 
-> curl -X POST "https://api.trade.hkvax.com/v1/quotation/order/query/orderBook" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"DIMT/USD\\", \\"depthStep\\":\\"0000001\\"}}"
+> curl -X POST "https://api.trade.hkvax.com/v1/quotation/quotation/order/query/orderBook" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"DIMT/USD\\", \\"depthStep\\":\\"0000001\\"}}"
 
 **Response Parameters**
 
@@ -670,7 +670,7 @@ Get the latest 12 trades of a specified pair.
 
 **curl call example**
 
-> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/order/query/dealList](https://api.trade.hkvax.com/v1/quotation/order/query/dealList)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"DIMT/USD\\"}}"
+> curl -X POST "[https://api.trade.hkvax.com/v1/quotation/quotation/order/query/dealList](https://api.trade.hkvax.com/v1/quotation/quotation/order/query/dealList)" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"DIMT/USD\\"}}"
 
 **Response Parameters**
 
@@ -726,7 +726,7 @@ Get the best bid or best ask of the specified pair.
 
 **curl call example**
 
-> curl -X POST "https://api.trade.hkvax.com/v1/quotation/order/query/marketBestPrice" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"IAP/USD\\",\\"action\\":\\"BUY\\"}}"
+> curl -X POST "https://api.trade.hkvax.com/v1/quotation/quotation/order/query/marketBestPrice" -H "accept: \*/*" -H "SIGNATURE: your-signature-info" -H "APIKEY: your-public-key" -H "DEVICEID: 123" -H "DEVICESOURCE: web" -H "Lang: zh-CN" -H "Client: market002" -H "Content-Type: application/json" -d "{ \\"lang\\": \\"zh-CN\\", \\"data\\":{\\"symbol\\": \\"IAP/USD\\",\\"action\\":\\"BUY\\"}}"
 
 **Request Parameters**
 
